@@ -23,7 +23,7 @@ jobs:
 
     - name: Build with Nuxt.js
       env:
-        NUXT_APP_BASE_URL: '/learn-from-zero/'
+        NUXT_APP_BASE_URL: '/CELEHS-Data-Science-Summer-Camp/'
       run: npm run generate  # 使用Nuxt.js生成静态网站
 
     - name: Deploy to GitHub Pages
