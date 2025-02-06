@@ -3,57 +3,57 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery as getQuery$1, getCookie, getRequestHeaders, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, readBody, getResponseStatusText } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/h3/dist/index.mjs';
-import { visit } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unist-util-visit/index.js';
-import { toString as toString$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/hast-util-to-string/index.js';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/devalue/index.js';
-import destr, { destr as destr$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, withLeadingSlash, withoutTrailingSlash, isRelative, joinRelativeURL } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/klona/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/scule/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getQuery as getQuery$1, getCookie, getRequestHeaders, lazyEventHandler, useBase, createApp, createRouter as createRouter$1, toNodeListener, getRouterParam, readBody, getResponseStatusText } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/h3/dist/index.mjs';
+import { visit } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unist-util-visit/index.js';
+import { toString as toString$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/hast-util-to-string/index.js';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/devalue/index.js';
+import destr, { destr as destr$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/destr/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, withLeadingSlash, withoutTrailingSlash, isRelative, joinRelativeURL } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/klona/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/scule/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/radix3/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/errx/dist/index.js';
-import { isVNode, version, unref } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/vue/index.mjs';
-import { extname, isAbsolute } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unified/index.js';
-import { toString } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/mdast-util-to-string/index.js';
-import { postprocess, preprocess } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/micromark/dev/index.js';
-import { stringifyPosition } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/micromark-util-resolve-all/index.js';
-import { normalizeUri } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/micromark-util-sanitize-uri/dev/index.js';
-import slugify from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/slugify/slugify.js';
-import remarkParse from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/remark-parse/index.js';
-import remark2rehype from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/remark-rehype/index.js';
-import remarkMDC, { parseFrontMatter } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/remark-mdc/dist/index.mjs';
-import remarkEmoji from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/remark-emoji/index.js';
-import remarkGFM from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/remark-gfm/index.js';
-import rehypeExternalLinks from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/rehype-external-links/index.js';
-import rehypeSortAttributeValues from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/rehype-raw/index.js';
-import { detab } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/detab/index.js';
-import Slugger from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/github-slugger/index.js';
-import { isSpecialLang, isSpecialTheme, addClassToHast, createHighlighterCore } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/core.mjs';
-import { transformerNotationDiff, transformerNotationFocus, transformerNotationHighlight, transformerNotationErrorLevel } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/@shikijs/transformers/dist/index.mjs';
+import { consola } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/errx/dist/index.js';
+import { isVNode, version, unref } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/vue/index.mjs';
+import { extname, isAbsolute } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unified/index.js';
+import { toString } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/mdast-util-to-string/index.js';
+import { postprocess, preprocess } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/micromark/dev/index.js';
+import { stringifyPosition } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/micromark-util-resolve-all/index.js';
+import { normalizeUri } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/micromark-util-sanitize-uri/dev/index.js';
+import slugify from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/slugify/slugify.js';
+import remarkParse from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/remark-parse/index.js';
+import remark2rehype from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/remark-rehype/index.js';
+import remarkMDC, { parseFrontMatter } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/remark-mdc/dist/index.mjs';
+import remarkEmoji from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/remark-emoji/index.js';
+import remarkGFM from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/remark-gfm/index.js';
+import rehypeExternalLinks from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/rehype-external-links/index.js';
+import rehypeSortAttributeValues from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/rehype-raw/index.js';
+import { detab } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/detab/index.js';
+import Slugger from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/github-slugger/index.js';
+import { isSpecialLang, isSpecialTheme, addClassToHast, createHighlighterCore } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/core.mjs';
+import { transformerNotationDiff, transformerNotationFocus, transformerNotationHighlight, transformerNotationErrorLevel } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/@shikijs/transformers/dist/index.mjs';
 import { fileURLToPath } from 'node:url';
-import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/ipx/dist/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/@unhead/shared/dist/index.mjs';
+import { ipxFSStorage, ipxHttpStorage, createIPX, createIPXH3Handler } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/ipx/dist/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),E=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return E()[o]??r[o]},has(e,o){const i=E();return o in i||o in r},set(e,o,i){const g=E(!0);return g[o]=i,!0},deleteProperty(e,o){if(!o)return !1;const i=E(!0);return delete i[o],!0},ownKeys(){const e=E(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",p=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"]];function B(){if(globalThis.process?.env)for(const e of p){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=B(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const C=t==="test"||n(s.TEST);n(s.MINIMAL)||T||C||!R;const a=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||a)&&s.TERM!=="dumb"||T);const _=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(_?.split(".")[0])||null;const W=globalThis.process||Object.create(null),c={versions:{}};new Proxy(W,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const A=globalThis.process?.release?.name==="node",L=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,u=globalThis.navigator?.userAgent==="Cloudflare-Workers",b=!!globalThis.__lagon__,F=[[S,"netlify"],[N,"edge-light"],[u,"workerd"],[O,"fastly"],[D,"deno"],[L,"bun"],[A,"node"],[b,"lagon"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const P=G();P?.name||"";
 
@@ -338,7 +338,7 @@ const _inlineRuntimeConfig = {
     "alias": {},
     "fs": {
       "dir": [
-        "D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/public"
+        "D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/public"
       ]
     },
     "http": {
@@ -390,7 +390,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/server/assets"}];
 
 const assets = createStorage();
 
@@ -402,13 +402,13 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp-camp\\content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp-camp\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp-camp","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp-camp\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp-camp\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp-camp\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp-camp\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp\\content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\Files\\Desktop\\CELEHS-Data-Science-Summer-Camp\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -858,13 +858,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _agfDRPNw87 = (function(nitro) {
+const _gJr06aDhjY = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script$1}<\/script>`);
   });
 });
 
-const rootDir = "D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp";
+const rootDir = "D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -883,7 +883,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _spK88fkfWE = (nitroApp) => {
+const _P2DQVIVGhL = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -2807,7 +2807,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr$1(content);
       }
@@ -3375,7 +3375,7 @@ function serverQueryContent(event, query, ...pathParts) {
   return queryBuilder;
 }
 
-const _RrHFNmrs5D = defineNitroPlugin(async (nitro) => {
+const _BxO9Qfwa96 = defineNitroPlugin(async (nitro) => {
   const storage = useStorage();
   const unwatch = await storage.watch(async (event, key) => {
     if (key.startsWith("content:source")) {
@@ -3389,17 +3389,17 @@ const _RrHFNmrs5D = defineNitroPlugin(async (nitro) => {
 
 const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"system\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
 
-const _4njhWTh3q3 = (function(nitro) {
+const _jdWj9AJE9C = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _agfDRPNw87,
-_spK88fkfWE,
-_RrHFNmrs5D,
-_4njhWTh3q3
+  _gJr06aDhjY,
+_P2DQVIVGhL,
+_BxO9Qfwa96,
+_jdWj9AJE9C
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -3490,7 +3490,7 @@ function createShikiHighlighter({
     const shiki2 = await createHighlighterCore({
       langs,
       themes,
-      loadWasm: () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/wasm.mjs')
+      loadWasm: () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/wasm.mjs')
     });
     for await (const config of await getConfigs()) {
       await config.shiki?.setup?.(shiki2);
@@ -3640,14 +3640,14 @@ function createShikiHighlighter({
 }
 
 const bundledLangs = {
-"python": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/langs/python.mjs'),
-"py": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/langs/python.mjs'),
-"javascript": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/langs/javascript.mjs'),
-"js": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/langs/javascript.mjs'),
+"python": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/langs/python.mjs'),
+"py": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/langs/python.mjs'),
+"javascript": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/langs/javascript.mjs'),
+"js": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/langs/javascript.mjs'),
 };
 const bundledThemes = {
-"github-light": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/themes/github-light.mjs').then(r => r.default),
-"github-dark": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/shiki/dist/themes/github-dark.mjs').then(r => r.default),
+"github-light": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/themes/github-light.mjs').then(r => r.default),
+"github-dark": () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/shiki/dist/themes/github-dark.mjs').then(r => r.default),
 };
 const options = {"theme":{"light":"github-light","dark":"github-dark"}};
 const highlighter = createShikiHighlighter({ bundledLangs, bundledThemes, options, getMdcConfigs });
@@ -3658,7 +3658,7 @@ const mdcHighlighter = /*#__PURE__*/Object.freeze({
   default: highlighter
 });
 
-const _9UndXs = eventHandler(async (event) => {
+const _wYJOVm = eventHandler(async (event) => {
   const { code, lang, theme: themeString, options: optionsStr } = getQuery$1(event);
   const theme = JSON.parse(themeString);
   const options = optionsStr ? JSON.parse(optionsStr) : {};
@@ -3746,7 +3746,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _ydUZkf = defineEventHandler(async (event) => {
+const _6JUcLz = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   const { advanceQuery } = useRuntimeConfig().public.content.experimental;
   if (query.first) {
@@ -3775,7 +3775,7 @@ const _ydUZkf = defineEventHandler(async (event) => {
   return serverQueryContent(event, query).find();
 });
 
-const _6e1GVG = defineEventHandler(async (event) => {
+const _0lTfJN = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
@@ -3885,7 +3885,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _EdMnuV = defineEventHandler(async (event) => {
+const _ODHPsV = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage().getItem("content-navigation.json");
@@ -3922,7 +3922,7 @@ const _EdMnuV = defineEventHandler(async (event) => {
   return createNav(contents?.result || contents, configs);
 });
 
-const _8o9wBO = lazyEventHandler(() => {
+const _guW1BZ = lazyEventHandler(() => {
   const opts = useRuntimeConfig().ipx || {};
   const fsDir = opts?.fs?.dir ? (Array.isArray(opts.fs.dir) ? opts.fs.dir : [opts.fs.dir]).map((dir) => isAbsolute(dir) ? dir : fileURLToPath(new URL(dir, globalThis._importMeta_.url))) : void 0;
   const fsStorage = opts.fs?.dir ? ipxFSStorage({ ...opts.fs, dir: fsDir }) : void 0;
@@ -3940,20 +3940,20 @@ const _8o9wBO = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
-const _lazy_7cjFF5 = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_jnxdd1 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_7cjFF5, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_mdc/highlight', handler: _9UndXs, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _ydUZkf, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _ydUZkf, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _ydUZkf, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.json', handler: _6e1GVG, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _EdMnuV, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _EdMnuV, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _EdMnuV, lazy: false, middleware: false, method: "get" },
-  { route: '/_ipx/**', handler: _8o9wBO, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_7cjFF5, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_jnxdd1, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_mdc/highlight', handler: _wYJOVm, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _6JUcLz, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _6JUcLz, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _6JUcLz, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _0lTfJN, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _ODHPsV, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _ODHPsV, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _ODHPsV, lazy: false, middleware: false, method: "get" },
+  { route: '/_ipx/**', handler: _guW1BZ, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_jnxdd1, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -4261,8 +4261,8 @@ const renderSSRHeadOptions = {"omitLineBreaks":false};
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();

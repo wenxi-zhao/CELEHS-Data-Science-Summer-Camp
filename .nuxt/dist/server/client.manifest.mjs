@@ -1,1 +1,1 @@
-export { default } from "file:///D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

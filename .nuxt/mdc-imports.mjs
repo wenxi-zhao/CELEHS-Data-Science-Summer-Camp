@@ -1,4 +1,4 @@
-import _Highlight from 'D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp-camp/node_modules/@nuxtjs/mdc/dist/runtime/highlighter/rehype-nuxt.js'
+import _Highlight from 'D:/Files/Desktop/CELEHS-Data-Science-Summer-Camp/node_modules/@nuxtjs/mdc/dist/runtime/highlighter/rehype-nuxt.js'
 
 export const remarkPlugins = {
 }
