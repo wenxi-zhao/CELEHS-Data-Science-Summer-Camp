@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c}from"./wnM05TLJ.js";const r={mounted(){this.$router.replace("CELEHS-Data-Science-Summer-Camp/summer-camp")}};function o(a,n,s,m,p,_){return c(),t("div")}const u=e(r,[["render",o]]);export{u as default};
