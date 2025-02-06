@@ -38,4 +38,8 @@ export default defineNuxtConfig({
     storage: 'localStorage', // or 'sessionStorage' or 'cookie'
     storageKey: 'nuxt-color-mode'
   },
+  app: {
+    baseURL: '/CELEHS-Data-Science-Summer-Camp/',
+    buildAssetsDir: 'assets'
+  },
 })
